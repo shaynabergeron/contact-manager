@@ -1,7 +1,7 @@
 .div_relative {
     position: relative;
     left: 750px;
-    bottom: 15px;
+    bottom: 25px;
   }
 
   .contact-font-name {
@@ -20,4 +20,16 @@
     position: relative;
     top: 15px;
     color: rgb(20, 22, 24);
+  }
+
+  .contact-position{
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+  }
+
+  .icon_relative {
+    position: relative;
+    left: 10px;
+    top: 35px;
   }
