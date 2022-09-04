@@ -4,7 +4,9 @@ import Header from './Header';
 import AddContact from './AddContact';
 import ContactList from './ContactList';
 
-function App() {
+/* Exporting all of the application *
+*  components                       */
+const App = () => {
   return (
     <div>
       <Header />
