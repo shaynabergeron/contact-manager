@@ -1,20 +1,34 @@
 import React from 'react';
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
+import './AddContact.css';
+
+/** Add Contact component with text field
+ * @todo: Fixed "Add Contact styling"
+  */
 
 class AddContact extends React.Component{
     render(){
         return(
-            <div>
+            <div className='add-contact-font'>
                 <h2> Add Contact</h2>
-                <form>
-                    <div>
-                        <label>Name</label>
-                        <input type="text" name="Name" placeholder="Name"/>
-                    </div>
-                    <div>
-                        <label>Email</label>
-                        <input type="text" email="Email" placeholder="Email"/>
-                    </div>
-                </form>
+                <Box
+                    component="form"
+                    sx={{'& > :not(style)': { m: 1, width: '30ch' },}}
+                    noValidate
+                    autoComplete="off"
+                >
+                    <TextField
+                        type="name"
+                        label="Name"
+                        placeholder="Name"
+                    />
+                   <TextField
+                        type="email"
+                        label="Email"
+                        placeholder="Email"
+                    />
+                </Box>
             </div>
         );
     }
