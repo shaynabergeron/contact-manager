@@ -2,6 +2,7 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import './AddContact.css';
+import Button from '@mui/material/Button';
 
 /** Add Contact component with text field
  * @todo: Fixed "Add Contact styling"
@@ -32,6 +33,7 @@ class AddContact extends React.Component{
                         placeholder="Email"
                     />
                  </Box> 
+                 <Button variant="contained">Add</Button>
             </div> 
             </Box>
         );
