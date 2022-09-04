@@ -1,0 +1,23 @@
+.div_relative {
+    position: relative;
+    left: 750px;
+    bottom: 15px;
+  }
+
+  .contact-font-name {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+    top: 5px;
+    color: rgb(20, 22, 24);
+  }
+
+  .contact-font-email {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    position: relative;
+    top: 15px;
+    color: rgb(20, 22, 24);
+  }
