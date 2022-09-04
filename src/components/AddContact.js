@@ -8,16 +8,19 @@ import './AddContact.css';
   */
 
 class AddContact extends React.Component{
+    
     render(){
         return(
-            <div className='add-contact-font'>
+            <Box
+             sx={{ p: 2, border: 1, borderRadius: '16px', borderColor: 'primary', backgroundColor: 'secondary' }}>
+             <div  className='add-contact-font'> 
                 <h2> Add Contact</h2>
-                <Box
+                 <Box
                     component="form"
                     sx={{'& > :not(style)': { m: 1, width: '30ch' },}}
                     noValidate
                     autoComplete="off"
-                >
+                > 
                     <TextField
                         type="name"
                         label="Name"
@@ -28,8 +31,9 @@ class AddContact extends React.Component{
                         label="Email"
                         placeholder="Email"
                     />
-                </Box>
-            </div>
+                 </Box> 
+            </div> 
+            </Box>
         );
     }
 }
